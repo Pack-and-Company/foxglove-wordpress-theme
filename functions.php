@@ -1,8 +1,5 @@
 <?php
 
-register_nav_menu('primary', 'Navigation Menu');
-register_nav_menu('home', 'Home Page Menu');
-
 add_theme_support( 'automatic-feed-links' );
 add_theme_support( 'post-thumbnails' );
 
