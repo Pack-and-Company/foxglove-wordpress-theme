@@ -5,5 +5,4 @@
   <?php the_content(); ?>
 <?php endwhile; wp_reset_query(); ?>
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

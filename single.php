@@ -7,5 +7,4 @@
 
 <?php comments_template( '', true ); ?>
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

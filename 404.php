@@ -14,5 +14,4 @@
   Links from other sites can sometimes be outdated or misspelled.
 </p>
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
