@@ -38,4 +38,49 @@ function remove_gallery_css( $css ) {
 }
 add_filter( 'gallery_style', 'remove_gallery_css' );
 
+function add_custom_theme_options( $wp_customize ) {
+  # Sections
+	$wp_customize->add_section( '_theme_settings' , array(
+    'title'      => __( 'Theme Options', '_foxglove_theme' ),
+    'priority'   => 30,
+	) );
+
+  # Settings
+  $wp_customize->add_setting( '_logo_light' , array(
+    'default'     => get_template_directory_uri() . '/images/logo-foxglove.png',
+  ) );
+
+  $wp_customize->add_setting( '_logo_dark' , array(
+    'default'     => get_template_directory_uri() . '/images/logo-foxglove.png',
+  ) );
+
+  # Controls
+  $wp_customize->add_control(
+     new WP_Customize_Image_Control(
+         $wp_customize,
+         'logo',
+         array(
+             'label'      => __( 'Light Logo', '_foxglove_theme' ),
+             'section'    => '_theme_settings',
+             'settings'   => '_logo_light',
+         )
+     )
+  );
+
+  $wp_customize->add_control(
+     new WP_Customize_Image_Control(
+         $wp_customize,
+         'logo',
+         array(
+             'label'      => __( 'Dark Logo', '_foxglove_theme' ),
+             'section'    => '_theme_settings',
+             'settings'   => '_logo_dark',
+         )
+     )
+  );
+
+
+}
+add_action( 'customize_register', 'add_custom_theme_options' );
+
 ?>
