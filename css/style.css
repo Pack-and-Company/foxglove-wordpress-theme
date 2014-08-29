@@ -139,7 +139,6 @@
 }
 
 body { 
-  font-size: 76%;
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   background-color: #fff;
@@ -147,8 +146,7 @@ body {
 }
 
 p {
-  margin: 0 0 1.1em;
-  font-size: 1.1em;
+  margin: 0 0 20px 0;
 }
 
 h2 {
