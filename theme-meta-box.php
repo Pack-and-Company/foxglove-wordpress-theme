@@ -50,7 +50,7 @@ function save_theme_meta_box_data( $post_id )
 
       // verify this came from the our screen and with proper authorization,
       // because save_post can be triggered at other times
-      if ( !wp_verify_nonce( $_POST['_select_theme_nonce'], '_select_theme_nonce_value' ) )
+      if ( !wp_verify_nonce( $_POST['_select_theme_nonce_name'], '_select_theme_nonce_value' ) )
           return;
 
       if ( isset($_POST['page_theme']) && $_POST['page_theme'] != "" ){
