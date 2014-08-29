@@ -15,7 +15,7 @@ jQuery(document).ready(function($) {
 		var home_width = $('.nav .selected a').width();
 		var home_position = $('.nav .selected a').position().left + 10;
 		$('.nav .selected').removeClass('selected');
-		$('.underline').stop(false, false).animate({ left: home_position, width: home_width }, 300);
+		$('.underline').css({ left: home_position, width: home_width });
 	} else {
 		var home_width = 0;
 		var home_position = 60;
