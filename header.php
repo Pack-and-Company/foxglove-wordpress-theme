@@ -22,6 +22,12 @@
 
 <?php
 $theme = get_post_meta( get_the_ID(), 'page_theme', true);
+
+if ($theme = 'light') {
+  $logo = get_theme_mod('_logo_light', get_template_directory_uri() . '/images/logo-foxglove.png');
+} else {
+  $logo = get_theme_mod('_logo_dark', get_template_directory_uri() . '/images/logo-foxglove.png');
+}
 ?>
 
 <body <?php body_class( $theme ); ?>>
@@ -30,7 +36,7 @@ $theme = get_post_meta( get_the_ID(), 'page_theme', true);
   <div class="wrapper">
     <div class="header">
       <img class="featured-header" src="<?=wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?>" width="1200" height="323" />
-      <a href="#"><img class="logo" src="images/snapdragon/logo-snapdragon.png" /></a>
+      <a href="#"><img class="logo" src="<?=$logo;?>" /></a>
       <ul class="nav">
         <li class="item"><a href="#">Eat</a></li>
         <li class="item"><a href="#">Drink</a></li>

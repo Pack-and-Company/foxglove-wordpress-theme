@@ -78,8 +78,6 @@ function add_custom_theme_options( $wp_customize ) {
          )
      )
   );
-
-
 }
 add_action( 'customize_register', 'add_custom_theme_options' );
 
