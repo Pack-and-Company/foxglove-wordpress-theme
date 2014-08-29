@@ -8,21 +8,21 @@ Template Name: Three Columns
 
 <?php get_header(); ?>
 
+<?php
+$more_string = '<!--more-->';
+$page_content = explode($more_string, $post->post_content);
+?>
+
 <div class="wrapper">
   <div class="content three-columns">
   	<div class="column primary">
 
-		  <?php the_excerpt(); ?>
+		  <?=$explodemore[0];?>
 
     </div>
     <div class="column secondary">
 
-    <?php
-      $more_string = '<!--more-->';
-      $page_content = explode($more_string, $post->post_content);
-
-      echo $explodemore[1]; // after the more-tag
-    ?>
+      <?=$explodemore[1];?>
 
     </div>
     <div class="column images">&nbsp;</div>
