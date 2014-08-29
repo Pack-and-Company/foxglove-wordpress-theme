@@ -23,7 +23,7 @@
 <div class="bg-header">
   <div class="wrapper">
     <div class="header">
-      <img class="featured-header" src="images/snapdragon/header-about.jpg" width="1200" height="323" />
+      <img class="featured-header" src="<?=wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?>" width="1200" height="323" />
       <a href="#"><img class="logo" src="images/snapdragon/logo-snapdragon.png" /></a>
       <ul class="nav">
         <li class="item"><a href="#">Eat</a></li>
