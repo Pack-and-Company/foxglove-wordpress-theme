@@ -20,6 +20,13 @@
 
 </head>
 
+<?php
+$theme = get_post_meta( get_the_ID(), 'page_theme', true);
+echo "<!-- $theme -->";
+?>
+
+<body <?php body_class( $theme ); ?>>
+
 <div class="bg-header">
   <div class="wrapper">
     <div class="header">
@@ -39,10 +46,3 @@
     </div>
   </div>
 </div>
-
-<?php
-$theme = get_post_meta( get_the_ID(), 'page_theme', true);
-echo "<!-- $theme -->";
-?>
-
-<body <?php body_class( $theme ); ?>>
