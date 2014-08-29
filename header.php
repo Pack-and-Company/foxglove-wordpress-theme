@@ -22,7 +22,6 @@
 
 <?php
 $theme = get_post_meta( get_the_ID(), 'page_theme', true);
-echo "<!-- $theme -->";
 ?>
 
 <body <?php body_class( $theme ); ?>>
