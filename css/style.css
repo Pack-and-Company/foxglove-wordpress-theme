@@ -109,8 +109,8 @@
 
 /* Home Page Menu */
 
-.home ul { margin: 0 10px; }
-.home li {
+.home-menu ul { margin: 0 10px; }
+.home-menu li {
   display: block;
   float: left;
   position: relative;
@@ -122,8 +122,8 @@
   border-width: 1px 0 2px 0;
   padding: 10px 0;
 }
-.home li:nth-of-type(3n) { margin-right: 0; }
-.home li .menu-title {
+.home-menu li:nth-of-type(3n) { margin-right: 0; }
+.home-menu li .menu-title {
   position: absolute;
   top: 152px;
   left: 10px;
