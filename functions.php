@@ -14,10 +14,10 @@ add_action('init', 'my_init_method');
 
 function the_content_before_more() {
 	$more_string = '<!--more-->';
-	$page_content = explode($more_string, get_the_content());
+	return $page_content = explode($more_string, get_the_content());
 	$page_content[0] = apply_filters('the_content', $page_content[0]);
 	$page_content[0] = str_replace(']]>', ']]&gt;', $page_content[0]);
-	return $page_content[0];
+	# return $page_content[0];
 }
 
 function the_content_after_more() {

@@ -12,7 +12,9 @@ Template Name: Three Columns
   <div class="content three-columns">
   	<div class="column primary">
 
-		  <?=print_r(the_content_before_more());?>
+		  <?php
+        print_r( the_content_before_more() );
+      ?>
 
     </div>
     <div class="column secondary">
