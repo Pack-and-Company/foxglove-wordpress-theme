@@ -40,4 +40,8 @@
   </div>
 </div>
 
-<body <?php body_class(); ?>>
+<?php
+$theme = get_post_meta( get_the_ID(), 'page_theme', true);
+?>
+
+<body <?php body_class($theme); ?>>
