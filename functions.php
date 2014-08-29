@@ -30,6 +30,11 @@ function the_content_after_more() {
 	return $page_content[1];
 }
 
+function remove_gallery_css( $css ) {
+	return preg_replace( "#<style type='text/css'>(.*?)</style>#s", '', $css );
+}
+add_filter( 'gallery_style', 'remove_gallery_css' );
+
 # Add meta box to select theme
 include(TEMPLATEPATH . '/theme-meta-box.php');
 
