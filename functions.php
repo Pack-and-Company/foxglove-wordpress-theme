@@ -30,4 +30,7 @@ function the_content_after_more() {
 	return $page_content[1];
 }
 
+# Add meta box to select theme
+include(TEMPLATEPATH . '/theme-meta-box.php');
+
 ?>
