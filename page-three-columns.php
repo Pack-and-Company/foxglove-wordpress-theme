@@ -8,21 +8,16 @@ Template Name: Three Columns
 
 <?php get_header(); ?>
 
-<?php
-$more_string = '<!--more-->';
-$page_content = explode($more_string, get_the_content());
-?>
-
 <div class="wrapper">
   <div class="content three-columns">
   	<div class="column primary">
 
-		  <?=$page_content[0];?>
+		  <?=the_content_before_more();?>
 
     </div>
     <div class="column secondary">
 
-      <?=$page_content[1];?>
+      <?=the_content_after_more();?>
 
     </div>
     <div class="column images">&nbsp;</div>
