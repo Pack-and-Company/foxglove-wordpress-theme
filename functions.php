@@ -58,7 +58,7 @@ function add_custom_theme_options( $wp_customize ) {
   $wp_customize->add_control(
      new WP_Customize_Image_Control(
          $wp_customize,
-         'logo',
+         '_logo_light',
          array(
              'label'      => __( 'Light Logo', '_foxglove_theme' ),
              'section'    => '_theme_settings',
@@ -70,7 +70,7 @@ function add_custom_theme_options( $wp_customize ) {
   $wp_customize->add_control(
      new WP_Customize_Image_Control(
          $wp_customize,
-         'logo',
+         '_logo_dark',
          array(
              'label'      => __( 'Dark Logo', '_foxglove_theme' ),
              'section'    => '_theme_settings',
