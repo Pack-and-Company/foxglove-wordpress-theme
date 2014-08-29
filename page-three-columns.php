@@ -12,7 +12,7 @@ Template Name: Three Columns
   <div class="content three-columns">
   	<div class="column primary">
 
-		  <?=the_content_before_more();?>
+		  <?=print_r(the_content_before_more());?>
 
     </div>
     <div class="column secondary">
