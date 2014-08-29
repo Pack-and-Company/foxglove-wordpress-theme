@@ -1,0 +1,205 @@
+.bg-header {  
+  background-image: url(../images/header-bg.gif);
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.bg-footer {  
+  background-image: url(../images/footer-light.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 960px;
+}
+
+.header {
+  height: 323px;
+  position: relative;
+}
+
+.featured-header {
+  position: absolute;
+  left: -120px;
+}
+
+.header .logo {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.header .nav {
+  text-align: center;
+  position: absolute;
+  top: 180px;
+  display: block;
+  background-image: url(../images/menu-header.png);
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 940px;
+  margin: 0 10px;
+  padding-top: 13px;
+}
+
+.header .nav .item {
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  margin-right: 35px;
+  padding-bottom: 2px;
+}
+.header .nav .item:last-of-type { margin-right: 0; }
+
+.header .nav .item img {
+  position: relative;
+  vertical-align: top;
+  top: -5px;
+}
+
+.header .nav .item.selected,
+.header .underline {
+  border-bottom: 1px solid #fff;
+}
+
+.header .underline {
+  position: absolute;
+  top: 215px;
+  left: 60px;
+  height: 0;
+  width: 0;
+  z-index: 1;
+}
+
+.footer {
+  height: 150px;
+  margin: 20px 10px 0 10px;
+  padding-top: 20px;
+  border-top: #ccc 1px solid;
+}
+
+.content {
+  margin-top: 40px;
+  min-height: 150px;
+  clear: both;
+  overflow: auto;
+}
+
+.column {
+  min-height: 150px;
+  padding: 0 10px;
+  float: left;
+}
+
+.two-columns .column { width: 460px; }
+.three-columns .primary { width: 380px; }
+.three-columns .secondary { width: 220px; }
+.three-columns .images { width: 300px; }
+
+.content img { border: #ccc 1px solid; }
+
+.gallery {
+  padding-top: 10px;
+  border-top: 1px solid rgb(111, 156, 20);
+}
+.images img { margin-bottom: 10px; }
+
+/* Home Page Menu */
+
+.home ul { margin: 0 10px; }
+.home li {
+  display: block;
+  float: left;
+  position: relative;
+  width: 300px;
+  height: 204px;
+  margin: 0 20px 0 0;
+  border-color: rgb(111, 156, 20);
+  border-style: solid;
+  border-width: 1px 0 2px 0;
+  padding: 10px 0;
+}
+.home li:nth-of-type(3n) { margin-right: 0; }
+.home li .menu-title {
+  position: absolute;
+  top: 152px;
+  left: 10px;
+}
+
+/* Typography */
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/julieta-ulanovsky_montserrat/Montserrat-Regular.eot"); /* IE */
+  src: url("../fonts/julieta-ulanovsky_montserrat/Montserrat-Regular.ttf") format("truetype"); /* Non IE */
+  /* https://www.pack.co.nz/fonts/julieta-ulanovsky_montserrat/OFL.txt */
+}
+
+body { 
+  font-size: 76%;
+  font-family: Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: #fff;
+  color: rgb(118, 118, 118);
+}
+
+p {
+  margin: 0 0 1.1em;
+  font-size: 1.1em;
+}
+
+h2 {
+  font-family: "Montserrat-Regular";
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+h2:not(:first-of-type) {
+  margin-top: 20px;
+}
+
+strong { font-weight: bold; }
+em { font-style: italic; }
+
+a { color: rgb(102, 102, 102); }
+.content a:link { text-decoration: underline; }
+.footer a:link { text-decoration: none; font-weight: bold; }
+
+.header .nav .item a {
+  color: #fff; 
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.menu-title {
+  color: #fff;
+  font-family: "Montserrat-Regular";
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+/* Dark Theme */
+
+body.dark { background-color: #000; color: rgb(204, 204, 204); }
+.dark a { color: rgb(136, 136, 136); }
+.dark .bg-header { background-image: none; }
+.dark .bg-footer { background-image: url(../images/footer-dark.jpg); }
+.dark .content img { border: #333 1px solid; }
+
+a:focus, a:hover {
+  color: rgb(111, 156, 20);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-property: border, color;
+  transition-property: border, color;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
