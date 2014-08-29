@@ -3,6 +3,9 @@
 add_theme_support( 'automatic-feed-links' );
 add_theme_support( 'post-thumbnails' );
 
+# Add meta box to select theme
+include(TEMPLATEPATH . '/theme-meta-box.php');
+
 function my_init_method() {
   if(!is_admin()) {
     wp_enqueue_script( 'jquery' );
@@ -34,8 +37,5 @@ function remove_gallery_css( $css ) {
 	return preg_replace( "#<style type='text/css'>(.*?)</style>#s", '', $css );
 }
 add_filter( 'gallery_style', 'remove_gallery_css' );
-
-# Add meta box to select theme
-include(TEMPLATEPATH . '/theme-meta-box.php');
 
 ?>
