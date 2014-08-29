@@ -17,12 +17,12 @@ $page_content = explode($more_string, $post->post_content);
   <div class="content three-columns">
   	<div class="column primary">
 
-		  <?=$explodemore[0];?>
+		  <?=$page_content[0];?>
 
     </div>
     <div class="column secondary">
 
-      <?=$explodemore[1];?>
+      <?=$page_content[1];?>
 
     </div>
     <div class="column images">&nbsp;</div>
