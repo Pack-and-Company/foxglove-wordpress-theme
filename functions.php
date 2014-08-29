@@ -22,13 +22,13 @@ function get_the_content_with_formatting ($more_link_text = '(more...)', $stript
 function the_content_before_more() {
 	$more_string = '<!--more-->';
 	$page_content = explode($more_string, get_the_content_with_formatting());
-	return $page_content[0];
+	return "BEFORE=" . $page_content[0];
 }
 
 function the_content_after_more() {
 	$more_string = '<!--more-->';
 	$page_content = explode($more_string, get_the_content_with_formatting());
-	return $page_content[1];
+	return "AFTER=" . $page_content[1];
 }
 
 ?>
