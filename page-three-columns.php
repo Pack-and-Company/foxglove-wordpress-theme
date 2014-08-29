@@ -10,7 +10,7 @@ Template Name: Three Columns
 
 <?php
 $more_string = '<!--more-->';
-$page_content = explode($more_string, $post->post_content);
+$page_content = explode($more_string, the_content());
 ?>
 
 <div class="wrapper">
