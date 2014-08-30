@@ -26,7 +26,7 @@ $theme = get_post_meta( get_the_ID(), 'page_theme', true);
 if ( $theme == 'light' ) {
   $logo = get_theme_mod('_logo_light', get_template_directory_uri() . '/images/logo-foxglove.png');
 } else {
-  $logo = get_theme_mod('_logo_dark', get_template_directory_uri() . '/images/logo-foxglove.png');
+  $logo = get_theme_mod('_logo_dark', get_template_directory_uri() . '/images/logo-foxtail.png');
 }
 ?>
 

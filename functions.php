@@ -51,7 +51,7 @@ function add_custom_theme_options( $wp_customize ) {
   ) );
 
   $wp_customize->add_setting( '_logo_dark' , array(
-    'default'     => get_template_directory_uri() . '/images/logo-foxglove.png',
+    'default'     => get_template_directory_uri() . '/images/logo-foxtail.png',
   ) );
 
   # Controls
