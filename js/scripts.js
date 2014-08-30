@@ -11,14 +11,14 @@ jQuery(document).ready(function($) {
 		}
 	});
 
+	var home_width = 0;
+	var home_position = 60;
+	
 	if ( $('.nav .selected').length ) {
-		var home_width = $('.nav .selected a').width();
-		var home_position = $('.nav .selected a').position().left + 10;
+		home_width = $('.nav .selected a').width();
+		home_position = $('.nav .selected a').position().left + 10;
 		$('.nav .selected').removeClass('selected');
 		$('.underline').css({ left: home_position, width: home_width });
-	} else {
-		var home_width = 0;
-		var home_position = 60;
 	}
 
 	$('.nav .item').hover(function(){
