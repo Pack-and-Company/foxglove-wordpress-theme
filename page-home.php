@@ -8,6 +8,13 @@ Template Name: Home Page
 
 <?php get_header(); ?>
 
+ <?php
+	$args = array(
+	  'theme_location' => 'primary',
+	);
+	wp_nav_menu( $args );
+?>
+
 <div class="wrapper">
   <div class="content home-menu">
     <ul>
