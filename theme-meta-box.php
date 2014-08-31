@@ -19,15 +19,16 @@ function display_theme_meta_box($post)
 
     // Get saved value, if none exists, "light" is selected
     $saved = get_post_meta( $post->ID, 'page_theme', true);
-    if( !$saved )
-        $saved = 'light';
+    if ( !$saved ) {
+      $saved = 'light';
+    }
 
     $fields = array(
         'light' => __('Light', 'wpse'),
         'dark'  => __('Dark', 'wpse'),
     );
 
-    foreach($fields as $key => $label)
+    foreach ( $fields as $key => $label )
     {
         printf(
             '<input type="radio" name="page_theme" value="%1$s" id="page_theme[%1$s]" %3$s />'.
