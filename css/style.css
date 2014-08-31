@@ -60,7 +60,7 @@
   top: -5px;
 }
 
-.header .nav .menu-item.selected,
+.header .nav .menu-item.current-menu-item,
 .header .underline {
   border-bottom: 1px solid #fff;
 }
