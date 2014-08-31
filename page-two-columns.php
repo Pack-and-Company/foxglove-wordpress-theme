@@ -15,7 +15,7 @@ Template Name: Two Columns
 		  <?php the_content(); ?>
 
     </div>
-    <div class="column images"><?php get_sidebar(); ?></div>
+    <?php get_sidebar(); ?>
   </div>
 </div>
 

@@ -18,7 +18,7 @@ Template Name: Three Columns
       <?=the_content_after_more();?>
 
     </div>
-    <div class="column images"><?php get_sidebar(); ?></div>
+    <?php get_sidebar(); ?>
   </div>
 </div>
 
