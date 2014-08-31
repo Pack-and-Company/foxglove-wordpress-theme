@@ -1,4 +1,5 @@
 <div class="column images">
+  <div class="gallery">
 <?php
 
 if( class_exists('Dynamic_Featured_Image') ) {
@@ -13,4 +14,5 @@ if( class_exists('Dynamic_Featured_Image') ) {
 }
 
 ?>
+  </div>
 </div>
