@@ -8,9 +8,11 @@ Template Name: Home Page
 
 <?php get_header(); ?>
 
- <?php
+<?php
 	$args = array(
 	  'theme_location' => 'primary',
+	  'container' => false
+
 	);
 	wp_nav_menu( $args );
 ?>
