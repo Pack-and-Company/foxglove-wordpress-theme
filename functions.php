@@ -8,6 +8,9 @@ register_nav_menus( array('primary' => 'Navigation Menu') );
 # Add meta box to select theme
 include(TEMPLATEPATH . '/theme-meta-box.php');
 
+# Add events post type
+include(TEMPLATEPATH . '/events-custom-post.php');
+
 function my_init_method() {
   if(!is_admin()) {
     wp_enqueue_script( 'jquery' );
