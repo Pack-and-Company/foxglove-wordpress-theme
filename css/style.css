@@ -45,22 +45,22 @@
   padding-top: 13px;
 }
 
-.header .nav .item {
+.header .nav .menu-item {
   display: inline-block;
   height: 20px;
   line-height: 20px;
   margin-right: 35px;
   padding-bottom: 2px;
 }
-.header .nav .item:last-of-type { margin-right: 0; }
+.header .nav .menu-item:last-of-type { margin-right: 0; }
 
-.header .nav .item img {
+.header .nav .menu-item img {
   position: relative;
   vertical-align: top;
   top: -5px;
 }
 
-.header .nav .item.selected,
+.header .nav .menu-item.selected,
 .header .underline {
   border-bottom: 1px solid #fff;
 }
@@ -167,7 +167,7 @@ a { color: rgb(102, 102, 102); }
 .content a:link { text-decoration: underline; }
 .footer a:link { text-decoration: none; font-weight: bold; }
 
-.header .nav .item a {
+.header .nav .menu-item a {
   color: #fff; 
   font-size: 17px;
   text-transform: uppercase;
