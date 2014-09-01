@@ -11,7 +11,7 @@ Template Name: Two Columns (No Gallery)
 <div class="wrapper">
   <div class="content two-columns">
   	<div class="column">
-		<?php the_content(); ?>
+		<?=the_content_before_more();?>
     </div>
     <div class="column">
 	    <?=the_content_after_more();?>
