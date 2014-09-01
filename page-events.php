@@ -33,11 +33,18 @@ Template Name: Events Page
 					get_post_meta($event->ID, '_event_price', true)
 				);
 
+				$post_link = get_post_meta($event->ID, '_event_url', true);
+				if ( $post_link != "" ) {
+					$more_link = " <a href='$post_link'>More...</a>";
+				} else {
+					$more_link = "";
+				}
+
 		        ?>
 
 		        <h3><?=$event->post_title;?></h3>
 		        <h4><?=implode(', ', array_filter($post_meta));?></h4>
-		        <p><?=$event->post_content;?></p>
+		        <p><?=$event->post_content;?><?=$more_link;?></p>
 
 		    <?php
             }
