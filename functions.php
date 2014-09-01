@@ -3,7 +3,10 @@
 add_theme_support( 'automatic-feed-links' );
 add_theme_support( 'post-thumbnails' );
 
-register_nav_menus( array('primary' => 'Navigation Menu') );
+register_nav_menus( array(
+  'primary' => 'Navigation Menu',
+  'home'    => 'Home Page Menu'
+) );
 
 # Add meta box to select theme
 include(TEMPLATEPATH . '/theme-meta-box.php');
