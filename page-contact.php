@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Two Columns
+Template Name: Contact Page
 */
 ?>
 
@@ -13,7 +13,9 @@ Template Name: Two Columns
   	<div class="column">
 		<?php the_content(); ?>
     </div>
-    <?php get_sidebar(); ?>
+    <div class="column">
+	    <h2>Location Map</h2>
+    </div>
   </div>
 </div>
 

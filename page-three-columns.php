@@ -11,12 +11,10 @@ Template Name: Three Columns
 <div class="wrapper">
   <div class="content three-columns">
   	<div class="column primary">
-		  <?=the_content_before_more();?>
+		<?=the_content_before_more();?>
     </div>
     <div class="column secondary">
-
-      <?=the_content_after_more();?>
-
+    	<?=the_content_after_more();?>
     </div>
     <?php get_sidebar(); ?>
   </div>
