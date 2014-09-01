@@ -35,10 +35,10 @@ Template Name: Events Page
 
 		        ?>
 
-		        <h3><a href="<?=wp_get_attachment_url(get_post_thumbnail_id($event->ID));?>"><?=$event->post_title;?></a></h3>
+		        <h3><?=$event->post_title;?></h3>
 		        <h4><?=implode(', ', array_filter($post_meta));?></h4>
 		        <p><?=$event->post_content;?></p>
-		        
+
 		    <?php
             }
             wp_reset_postdata();
