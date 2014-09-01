@@ -83,13 +83,11 @@
 
 .content {
   margin-top: 40px;
-  min-height: 150px;
   clear: both;
   overflow: auto;
 }
 
 .column {
-  min-height: 150px;
   padding: 0 10px;
   float: left;
 }
