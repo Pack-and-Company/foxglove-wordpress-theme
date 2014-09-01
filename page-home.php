@@ -15,6 +15,8 @@ Template Name: Home Page
 	$args = array(
 	  'theme_location' => 'home',
 	  'container' => false,
+	  'link_before'     => '<span class="menu-title">',
+	  'link_after'      => '</span>',
 	);
 	wp_nav_menu( $args );
 	?>
