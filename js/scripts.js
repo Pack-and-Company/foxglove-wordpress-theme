@@ -24,9 +24,9 @@ jQuery(document).ready(function($) {
 	$('.nav .menu-item').hover(function(){
 		var width = $(this).width();
 		var position = $(this).position().left + 10;
-		$('.underline').stop(false, false).animate({ left: position, width: width }, 300);
+		$('.underline').stop(false, false).animate({ left: position, width: width }, 400);
 	}, function(){
-		$('.underline').stop(false, false).animate({ left: home_position, width: home_width }, 300);
+		$('.underline').stop(false, false).animate({ left: home_position, width: home_width }, 400);
 	});
 
 	function setFooterPosition(){
