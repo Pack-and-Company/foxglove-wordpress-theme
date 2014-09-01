@@ -8,13 +8,16 @@ Template Name: Home Page
 
 <?php get_header(); ?>
 
+
 <div class="wrapper">
   <div class="content home-menu">
-    <ul>
-      <li><a href="#"><img src="http://placehold.it/300x204"><span class="menu-title">Drinks<br />List</span></a></li>
-      <li><a href="#"><img src="http://placehold.it/300x204"><span class="menu-title">Online<br />Reservations</span></a></li>
-      <li><a href="#"><img src="http://placehold.it/300x204"><span class="menu-title">Upcoming<br />Events</span></a></li>
-    </ul>
+	<?php
+	$args = array(
+	  'theme_location' => 'home',
+	  'container' => false,
+	);
+	wp_nav_menu( $args );
+	?>
   </div>
 </div>
 
