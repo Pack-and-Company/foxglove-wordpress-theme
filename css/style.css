@@ -1,4 +1,4 @@
-.bg-header {  
+.bg-header {
   background-image: url(../images/header-bg.gif);
   background-position: top;
   background-repeat: no-repeat;
@@ -193,11 +193,22 @@ body.dark { background-color: #000; color: rgb(204, 204, 204); }
 a:focus, a:hover {
   color: rgb(111, 156, 20);
   -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
   transition-delay: 0s;
+
   -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
   transition-duration: 0.4s;
+
   -webkit-transition-property: border, color;
+  -moz-transition-property: border, color;
+  -o-transition-property: border, color;
   transition-property: border, color;
+
   -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 }
