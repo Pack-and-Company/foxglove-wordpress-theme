@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Contact Page
+Template Name: Two Columns (No Gallery)
 */
 ?>
 
@@ -14,7 +14,7 @@ Template Name: Contact Page
 		<?php the_content(); ?>
     </div>
     <div class="column">
-	    <h2>Location Map</h2>
+	    <?=the_content_after_more();?>
     </div>
   </div>
 </div>
