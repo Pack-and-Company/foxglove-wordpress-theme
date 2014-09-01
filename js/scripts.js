@@ -28,4 +28,17 @@ jQuery(document).ready(function($) {
 	}, function(){
 		$('.underline').stop(false, false).animate({ left: home_position, width: home_width }, 300);
 	});
+
+	function setFooterPosition(){
+		var winHeight 		= $(window).height();
+		var headerHeight	= $('.bg-header').outerHeight();
+		var contentHeight 	= $('body > .wrapper').outerHeight();
+		var footerHeight	= $('.bg-footer').outerHeight();
+			
+		if (winHeight > (headerHeight + contentHeight + footerHeight)) {
+			$('body > .wrapper').css('min-height', winHeight - headerHeight - footerHeight - 40);
+		}
+	}
+	setFooterPosition();
+	$(window).resize(function() { setFooterPosition(); });
 });
