@@ -238,7 +238,7 @@ a:focus, a:hover {
 
 /* Mobile */
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 320px) {
   .bg-header {
     background: none;
     width: 100%;
