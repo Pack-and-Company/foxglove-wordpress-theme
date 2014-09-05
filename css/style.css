@@ -207,6 +207,12 @@ body.dark { background-color: #000; color: rgb(204, 204, 204); }
 .dark .bg-footer { background-image: url(../images/footer-dark.jpg); }
 .dark .content img { border: #333 1px solid; }
 
+.dark .enquire {
+  background-color: #222;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
 a:focus, a:hover {
   color: rgb(111, 156, 20);
   -webkit-transition-delay: 0s;
@@ -228,4 +234,58 @@ a:focus, a:hover {
   -moz-transition-timing-function: ease-in;
   -o-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 420px) {
+  .bg-header {
+    background: none;
+    width: 100%;
+    overflow: hidden;
+    height: 223px;
+  }
+
+  .featured-header {
+    top: -100px;
+  }
+
+  .header .nav {
+    display: none;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+
+  .column,
+  .footer .column,
+  .two-columns .column,
+  .three-columns .primary,
+  .three-columns .secondary,
+  .three-columns .images {
+    float: none;
+    width: auto;
+  }
+
+  .column img,
+  .home-menu li,
+  .home-menu li a img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .home-menu li {
+    overflow: hidden;
+    border-bottom: none;
+    margin-top: 10px;
+  }
+
+  .home-menu li img {
+    height: 258px;
+  }
+
+  .footer .column:nth-of-type(2) {
+    display: none;
+  }
 }
