@@ -238,7 +238,7 @@ a:focus, a:hover {
 
 /* Mobile */
 
-@media only screen and (max-width: 320px) {
+@media screen and (max-width: 360px) {
   .bg-header {
     background: none;
     width: 100%;
@@ -247,7 +247,11 @@ a:focus, a:hover {
   }
 
   .featured-header {
-    top: -100px;
+    top: -120px;
+  }
+
+  .header .logo {
+    max-width: 90%;
   }
 
   .header .nav {
@@ -283,6 +287,10 @@ a:focus, a:hover {
 
   .home-menu li img {
     height: 258px;
+  }
+
+  .footer {
+    height: 200px;
   }
 
   .footer .column:nth-of-type(2) {
