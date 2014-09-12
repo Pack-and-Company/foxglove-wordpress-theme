@@ -285,7 +285,7 @@ a:focus, a:hover {
 
   .header .nav .menu-item img { top: auto; }
 
-  .menu-button {
+  .header .menu-button {
     display: block;
     position: absolute;
     top: 7px;
@@ -293,8 +293,8 @@ a:focus, a:hover {
     width: 50px;
   }
 
-  .menu-button img { width: 50px; }
-  .menu-button .open { position: fixed; }
+  .header .menu-button img { width: 50px; }
+  .header .menu-button .open { position: fixed; }
   .header .icon-close { display: none; }
   .header .underline { display: none; }
 
