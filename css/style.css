@@ -181,7 +181,7 @@ a { color: rgb(102, 102, 102); font-size: inherit; }
   border-bottom: 1px solid #CCC;
 }
 
-.header .nav .item a {
+.header .nav .menu-item a {
   color: #fff; 
   font-size: 17px;
   text-transform: uppercase;
@@ -274,7 +274,7 @@ a:focus, a:hover {
     text-align: left;
   }
 
-  .header .nav .item img {
+  .header .nav .menu-item img {
     top: auto;
   }
 
