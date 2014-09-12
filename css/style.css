@@ -75,7 +75,7 @@
   z-index: 1;
 }
 
-.header .hamburger-button {
+.header .menu-button {
   display: none;
 }
 
@@ -278,7 +278,7 @@ a:focus, a:hover {
     top: auto;
   }
 
-  .header .hamburger-button {
+  .header .menu-button {
     display: block;
     position: absolute;
     top: 7px;
@@ -286,12 +286,12 @@ a:focus, a:hover {
     width: 50px;
   }
 
-  .header .icon-close {
-    display: none;
-  }
-
   .header .menu-button .open {
     position: fixed;
+  }
+
+  .header .icon-close {
+    display: none;
   }
 
   .menu-button img {
