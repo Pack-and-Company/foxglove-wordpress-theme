@@ -282,6 +282,7 @@ a:focus, a:hover {
     margin: 0 0 0 10px;
   }
 
+  .header .nav .menu-item a { display: block; }
   .header .nav .menu-item img { top: auto; }
 
   .header .menu-button {
