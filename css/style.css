@@ -293,7 +293,7 @@ a:focus, a:hover {
   }
 
   .header .menu-button img { width: 50px; }
-  .header .menu-button .open { position: fixed; }
+  .header .menu-button .open { position: fixed; z-index: 2; }
   .header .icon-close { display: none; }
   .header .underline { display: none; }
 
