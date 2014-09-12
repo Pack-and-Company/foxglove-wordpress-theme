@@ -61,7 +61,7 @@
   top: -5px;
 }
 
-.header .nav .menu-item.selected,
+.header .nav .menu-item .current-menu-item,
 .header .underline {
   border-bottom: 1px solid #fff;
 }
@@ -173,6 +173,18 @@ a { color: rgb(102, 102, 102); font-size: inherit; }
 .content a:link { text-decoration: underline; }
 .footer .details a:link { text-decoration: none; font-weight: bold; }
 
+.footer .column:nth-of-type(2) {
+  margin-top: 30px;
+  text-align: right;
+}
+
+.contact-link {
+  font-family: "Montserrat-Regular";
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: none;
+}
+
 .enquire {
   display: block;
   text-align: center;
@@ -188,23 +200,12 @@ a { color: rgb(102, 102, 102); font-size: inherit; }
   text-decoration: none;
 }
 
-.home-menu ul li .menu-title {
+.menu-title {
   color: #fff;
   font-family: "Montserrat-Regular";
   text-transform: uppercase;
   font-size: 24px;
   line-height: 24px;
-}
-
-.footer .column:nth-of-type(2) {
-  margin-top: 30px;
-  text-align: right;
-}
-.contact-link {
-  font-family: "Montserrat-Regular";
-  font-size: 16px;
-  font-weight: normal;
-  text-decoration: none;
 }
 
 /* Dark Theme */
@@ -224,12 +225,23 @@ body.dark { background-color: #000; color: rgb(204, 204, 204); }
 a:focus, a:hover {
   color: rgb(111, 156, 20);
   -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
   transition-delay: 0s;
+
   -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
   transition-duration: 0.4s;
+
   -webkit-transition-property: border, color;
+  -moz-transition-property: border, color;
+  -o-transition-property: border, color;
   transition-property: border, color;
+
   -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 }
 
@@ -240,7 +252,11 @@ a:focus, a:hover {
     background: none;
     width: 100%;
     overflow: auto;
-    height: 200px;
+    height: 223px;
+  }
+
+  .wrapper {
+    width: 100%;
   }
 
   .featured-header {
@@ -301,10 +317,6 @@ a:focus, a:hover {
 
   .header .underline {
     display: none;
-  }
-
-  .wrapper {
-    width: 100%;
   }
 
   .column,
