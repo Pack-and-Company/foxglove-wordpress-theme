@@ -251,21 +251,13 @@ a:focus, a:hover {
   .bg-header {
     background: none;
     width: 100%;
-    overflow: auto;
     height: 223px;
+    overflow: hidden;
   }
 
-  .wrapper {
-    width: 100%;
-  }
-
-  .featured-header {
-    top: -120px;
-  }
-
-  .header .logo {
-    max-width: 90%;
-  }
+  .wrapper { width: 100%; }
+  .featured-header { top: -120px; }
+  .header .logo { max-width: 90%; }
 
   .header .nav {
     display: none;
@@ -286,15 +278,14 @@ a:focus, a:hover {
     width: 100%;
     height: 35px;
     line-height: 30px;
-    margin: 0 10px;
     text-align: left;
+    padding: 0;
+    margin: 0 0 0 10px;
   }
 
-  .header .nav .menu-item img {
-    top: auto;
-  }
+  .header .nav .menu-item img { top: auto; }
 
-  .header .menu-button {
+  .menu-button {
     display: block;
     position: absolute;
     top: 7px;
@@ -302,22 +293,10 @@ a:focus, a:hover {
     width: 50px;
   }
 
-  .header .menu-button .open {
-    position: fixed;
-  }
-
-  .header .icon-close {
-    display: none;
-  }
-
-  .menu-button img {
-    width: 100%;
-    height: auto;
-  }
-
-  .header .underline {
-    display: none;
-  }
+  .menu-button img { width: 50px; }
+  .menu-button .open { position: fixed; }
+  .header .icon-close { display: none; }
+  .header .underline { display: none; }
 
   .column,
   .footer .column,
@@ -342,15 +321,8 @@ a:focus, a:hover {
     margin-top: 10px;
   }
 
-  .home-menu li img {
-    height: 258px;
-  }
+  .home-menu li img { height: 258px; }
 
-  .footer {
-    height: 200px;
-  }
-
-  .footer .column:nth-of-type(2) {
-    display: none;
-  }
+  .footer { height: 200px; }
+  .footer .column:nth-of-type(2) { display: none; }
 }
