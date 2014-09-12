@@ -220,27 +220,31 @@ body.dark { background-color: #000; color: rgb(204, 204, 204); }
   border-bottom: 1px solid #333;
 }
 
-a:focus, a:hover {
-  color: rgb(111, 156, 20);
-  -webkit-transition-delay: 0s;
-  -moz-transition-delay: 0s;
-  -o-transition-delay: 0s;
-  transition-delay: 0s;
+/* Hover styles */
 
-  -webkit-transition-duration: 0.4s;
-  -moz-transition-duration: 0.4s;
-  -o-transition-duration: 0.4s;
-  transition-duration: 0.4s;
+@media screen and (min-width: 360px) {
+  a:focus, a:hover {
+    color: rgb(111, 156, 20);
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
 
-  -webkit-transition-property: border, color;
-  -moz-transition-property: border, color;
-  -o-transition-property: border, color;
-  transition-property: border, color;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
 
-  -webkit-transition-timing-function: ease-in;
-  -moz-transition-timing-function: ease-in;
-  -o-transition-timing-function: ease-in;
-  transition-timing-function: ease-in;
+    -webkit-transition-property: border, color;
+    -moz-transition-property: border, color;
+    -o-transition-property: border, color;
+    transition-property: border, color;
+
+    -webkit-transition-timing-function: ease-in;
+    -moz-transition-timing-function: ease-in;
+    -o-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+  }
 }
 
 /* Mobile */
