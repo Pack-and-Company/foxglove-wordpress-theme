@@ -48,6 +48,12 @@ if ( $theme == 'dark' ) {
         wp_nav_menu( $args );
       ?>
       <div class="underline"></div>
+      <div class="menu-button">
+        <a href="#" class="hamburger-button" data-target=".nav">
+          <img class="icon-hamburger" src="<?=get_template_directory_uri();?>/images/icon-hamburger.png">
+          <img class="icon-close" src="<?=get_template_directory_uri();?>/images/icon-close.png">
+        </a>
+      </div>
     </div>
   </div>
 </div>

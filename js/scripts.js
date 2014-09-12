@@ -11,6 +11,22 @@ jQuery(document).ready(function($) {
 		}
 	});
 
+	$('.hamburger-button').click(function() {
+		var target = $($(this).attr('data-target'));
+
+		$(this).toggleClass('open');
+
+		if ( $(this).hasClass('open') ) {
+			$(target).show();
+			$('.icon-close').show();
+			$('.icon-hamburger').hide();
+		} else {
+			$(target).hide();
+			$('.icon-close').hide();
+			$('.icon-hamburger').show();
+		}
+	});
+
 	var home_width = 0;
 	var home_position = 60;
 	
