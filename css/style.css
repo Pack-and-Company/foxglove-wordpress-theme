@@ -112,8 +112,6 @@
 
 /* Home Page Menu */
 
-/* Home Page Menu */
-
 .home-menu ul { margin: 0 10px; }
 .home-menu li {
   display: block;
@@ -271,6 +269,7 @@ a:focus, a:hover {
     left: 0;
     top: 0;
     overflow: auto;
+    z-index: 1;
   }
 
   .header .nav .menu-item {
