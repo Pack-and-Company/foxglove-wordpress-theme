@@ -13,15 +13,16 @@ jQuery(document).ready(function($) {
 
 	$('.hamburger-button').click(function() {
 		var target = $($(this).attr('data-target'));
+		var speed = 200;
 
 		$(this).toggleClass('open');
 
 		if ( $(this).hasClass('open') ) {
-			$(target).show();
+			$(target).slideDown(speed);
 			$('.icon-close').show();
 			$('.icon-hamburger').hide();
 		} else {
-			$(target).hide();
+			$(target).slideUp(speed);
 			$('.icon-close').hide();
 			$('.icon-hamburger').show();
 		}
