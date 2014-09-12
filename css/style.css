@@ -314,6 +314,7 @@ a:focus, a:hover {
   iframe {
     max-width: 100%;
     width: 100%;
+    height: auto;
   }
 
   .home-menu li {
