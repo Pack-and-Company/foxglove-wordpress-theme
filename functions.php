@@ -53,6 +53,11 @@ function add_custom_theme_options( $wp_customize ) {
     'priority'   => 30,
 	) );
 
+  $wp_customize->add_section( '_footer_details' , array(
+    'title'      => __( 'Footer Details', '_foxglove_theme' ),
+    'priority'   => 35,
+  ) );
+
   # Settings
   $wp_customize->add_setting( '_logo_light' , array(
     'default'     => get_template_directory_uri() . '/images/logo-foxglove.png',
@@ -61,6 +66,34 @@ function add_custom_theme_options( $wp_customize ) {
   $wp_customize->add_setting( '_logo_dark' , array(
     'default'     => get_template_directory_uri() . '/images/logo-foxtail.png',
   ) );
+
+  $footer_fields = array(
+    array(
+      "label"    => __("Street Address", "_foxglove_theme")
+      "section"  => "_footer_details",
+      "settings" => "_street_address",
+    ),
+    array(
+      "label"    => __("Postal Address", "_foxglove_theme")
+      "section"  => "_footer_details",
+      "settings" => "_postal_address",
+    ),
+    array(
+      "label"    => __("Phone Number", "_foxglove_theme")
+      "section"  => "_footer_details",
+      "settings" => "_phone_number",  
+    ),
+    array(
+      "label"    => __("Email Address", "_foxglove_theme")
+      "section"  => "_footer_details",
+      "settings" => "_email_address", 
+    ),
+  );
+
+  foreach ($footer_fields as $field) {
+    $wp_customize->add_setting($field['settings'], array('default' => '',));
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, $field['settings'], $field)));
+  }
 
   # Controls
   $wp_customize->add_control(
