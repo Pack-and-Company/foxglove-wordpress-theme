@@ -69,22 +69,22 @@ function add_custom_theme_options( $wp_customize ) {
 
   $footer_fields = array(
     array(
-      "label"    => __("Street Address", "_foxglove_theme")
+      "label"    => __("Street Address", "_foxglove_theme"),
       "section"  => "_footer_details",
       "settings" => "_street_address",
     ),
     array(
-      "label"    => __("Postal Address", "_foxglove_theme")
+      "label"    => __("Postal Address", "_foxglove_theme"),
       "section"  => "_footer_details",
       "settings" => "_postal_address",
     ),
     array(
-      "label"    => __("Phone Number", "_foxglove_theme")
+      "label"    => __("Phone Number", "_foxglove_theme"),
       "section"  => "_footer_details",
       "settings" => "_phone_number",  
     ),
     array(
-      "label"    => __("Email Address", "_foxglove_theme")
+      "label"    => __("Email Address", "_foxglove_theme"),
       "section"  => "_footer_details",
       "settings" => "_email_address", 
     ),
@@ -92,7 +92,7 @@ function add_custom_theme_options( $wp_customize ) {
 
   foreach ($footer_fields as $field) {
     $wp_customize->add_setting($field['settings'], array('default' => '',));
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, $field['settings'], $field)));
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, $field['settings'], $field));
   }
 
   # Controls
