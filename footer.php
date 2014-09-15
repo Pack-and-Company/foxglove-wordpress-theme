@@ -7,7 +7,7 @@
           <?php
             $postal_address = get_theme_mod('_postal_address', '');
             if ($postal_address != '') {
-              echo "Postal Address:" + $postal_address;
+              echo "Postal Address:" . $postal_address . "<br />";
             }
           ?>
           Phone: <strong><?=get_theme_mod('_phone_number', '');?></strong> | email: <a href="<?=get_theme_mod('_email_address', '#');?>"><?=get_theme_mod('_email_address', '');?></a><br />
