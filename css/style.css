@@ -149,8 +149,12 @@ body {
   color: rgb(118, 118, 118);
 }
 
-p, ul {
+p:not(:empty), ul {
   margin: 0 0 20px 0;
+}
+
+.form-input p {
+  margin: 0;
 }
 
 h2 {
@@ -164,8 +168,8 @@ h2:not(:first-of-type) {
   margin-top: 20px;
 }
 
-h3, strong { font-weight: bold; font-size: inherit; }
-em { font-style: italic; font-size: inherit; }
+h3, strong, label { font-weight: bold; font-size: inherit; }
+em, legend { font-style: italic; font-size: inherit; }
 
 a { color: rgb(102, 102, 102); font-size: inherit; }
 .content a:link { text-decoration: underline; }
