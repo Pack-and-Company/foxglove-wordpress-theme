@@ -161,6 +161,14 @@ input[text], textarea {
   width: 80%;
 }
 
+.wpcf7-not-valid-tip {
+  display: inline;
+}
+
+div.wpcf7-response-output {
+  margin: 0;
+}
+
 h2 {
   font-family: "Montserrat-Regular";
   font-size: 25px;
