@@ -11,7 +11,7 @@
             }
           ?>
           Phone: <strong><?=get_theme_mod('_phone_number', '');?></strong> | email: <a href="<?=get_theme_mod('_email_address', '#');?>"><?=get_theme_mod('_email_address', '');?></a><br />
-          For all function enquires <a href="#">please fill out our online form</a>.
+          For all function enquires <a href="<?=get_home_url();?>/contact-form">please fill out our online form</a>.
         </p>
       </div>
       <div class="column">
