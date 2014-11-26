@@ -266,7 +266,7 @@ body.dark { background-color: #000; color: rgb(204, 204, 204); }
 
 /* Mobile */
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 375px) {
   .bg-header {
     background: none;
     width: 100%;
