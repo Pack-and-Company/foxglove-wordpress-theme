@@ -239,7 +239,7 @@ body.dark { background-color: #000; color: rgb(204, 204, 204); }
 
 /* Hover styles */
 
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 375px) {
   a:focus, a:hover {
     color: rgb(111, 156, 20);
     -webkit-transition-delay: 0s;
